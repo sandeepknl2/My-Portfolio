@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sandeep Kumar L — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Sandeep Kumar L</h1>
+        <p class="muted">Software Engineer • Full Stack Developer</p>
+      </div>
+      <nav class="nav" id="navMenu">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-controls">
+        <button id="themeToggle" class="btn small">🌙</button>
+        <button id="menuToggle" class="btn small">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero container">
+    <div class="hero-left">
+      <h2>Hi, I'm <span class="accent">Sandeep Kumar L</span></h2>
+      <p class="lead">
+        Aspiring Software Engineer with a strong foundation in full-stack development, data management, and problem-solving.
+      </p>
+      <div class="cta">
+        <a class="btn" href="mailto:sandeepkumarknl2@gmail.com">Email Me</a>
+        <a class="btn outline" href="#" id="downloadResume">Download Resume</a>
+      </div>
+      <ul class="contact-inline">
+        <li>📍 Karnataka, India</li>
+        <li>📞 +91 9663833711</li>
+        <li>💼 <a href="https://www.linkedin.com/in/lsandeepkumar" target="_blank">LinkedIn</a></li>
+        <li>💻 <a href="https://github.com/sandeepknl2" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+    <div class="hero-right">
+      <div class="card profile-card">
+        <div class="avatar">SK</div>
+        <h3>Sandeep Kumar L</h3>
+        <p class="muted">B.Tech (Information Science)</p>
+        <div class="roles">
+          <span>Java</span><span>Full Stack</span><span>Problem Solver</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container section">
+    <h2>About</h2>
+    <p>
+      I am an adaptable and hardworking developer focusing on building scalable applications and data-driven systems.
+      I have hands-on experience with Java, SQL, JDBC, Servlets, HTML/CSS/JS and have completed internships and training in full-stack development.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><h3>Core</h3><ul><li>C++</li><li>Java</li><li>OOPs</li><li>JDBC</li></ul></div>
+      <div class="skill-card"><h3>Web</h3><ul><li>HTML/CSS</li><li>JavaScript</li><li>Servlets</li><li>SQL/MySQL</li></ul></div>
+      <div class="skill-card"><h3>Tools</h3><ul><li>Apache Tomcat</li><li>Problem Solving</li><li>MS Word</li></ul></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <article class="project" data-id="0">
+        <h3>IPL Data Warehouse Management</h3>
+        <p class="muted">2023 • Java / SQL / JDBC / Servlets</p>
+        <button class="btn small detailsBtn">Details</button>
+      </article>
+      <article class="project" data-id="1">
+        <h3>Book Library Management System</h3>
+        <p class="muted">Internship • Java / SQL</p>
+        <button class="btn small detailsBtn">Details</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="container section">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Full Stack Intern — Varcon Technologies</h3>
+        <span class="muted">2023</span>
+        <p>Worked on frontend & backend modules; Java, SQL, JDBC, web technologies.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Training — Java Full Stack (Jspiders)</h3>
+        <span class="muted">Ongoing</span>
+        <p>Learning Servlets, JSP, JDBC, strengthening full stack skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="container section">
+    <h2>Education</h2>
+    <div class="edu-grid">
+      <div class="edu-card"><h3>Vidya Vikas Institute</h3><span class="muted">B.Tech — 2020-2024 • 8.1 CGPA</span></div>
+      <div class="edu-card"><h3>St. Norbert PU College</h3><span class="muted">12th — 2019</span></div>
+      <div class="edu-card"><h3>St. Mary’s School</h3><span class="muted">10th — 2018</span></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container section">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Sandeep Kumar L • <a href="https://github.com/sandeepknl2" target="_blank">GitHub</a></p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="projectModal" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button id="closeModal" class="modal-close">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

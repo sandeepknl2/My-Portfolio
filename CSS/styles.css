@@ -1,0 +1,75 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#a6b0c3;
+  --accent:#ce00bb;
+  --text:#e6eef8;
+  --glass: rgba(255,255,255,0.03);
+  --container: 1100px;
+  --radius:12px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+  background: linear-gradient(180deg, var(--bg) 0%, #071026 100%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.55;
+}
+.container{max-width:var(--container);margin:0 auto;padding:28px}
+.site-header{position:sticky;top:0;z-index:40;background:linear-gradient(180deg, rgba(7,10,20,0.5), rgba(7,10,20,0.25));backdrop-filter: blur(6px);border-bottom:1px solid rgba(255,255,255,0.03)}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand h1{margin:0;font-size:18px}
+.brand .muted{font-size:12px;color:var(--muted);margin-top:4px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px}
+.nav a:hover{color:var(--text)}
+.btn{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;border:0;cursor:pointer;text-decoration:none}
+.btn.small{padding:6px 8px;font-size:13px}
+.btn.outline{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+.muted{color:var(--muted)}
+
+.hero{display:flex;gap:20px;align-items:center;padding-top:32px;padding-bottom:32px}
+.hero-left{flex:1}
+.hero-right{width:260px}
+.lead{font-size:16px;margin:12px 0;color: #dfe9f6}
+.cta{display:flex;gap:12px;margin:12px 0}
+.contact-inline{list-style:none;padding:0;display:flex;gap:12px;margin:16px 0 0 0;flex-wrap:wrap}
+.contact-inline li{font-size:13px;color:var(--muted)}
+
+.profile-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);text-align:center}
+.avatar{width:76px;height:76px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#0046d1);display:inline-flex;align-items:center;justify-content:center;font-weight:700;color:white;margin:0 auto 10px;font-size:20px}
+
+.section{padding-top:28px;padding-bottom:28px}
+.skills-grid{display:flex;gap:18px;flex-wrap:wrap}
+.skill-card{flex:1;min-width:220px;background:var(--card);padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.skill-card h3{margin-top:0}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.project{background:var(--card);padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.project-actions{display:flex;justify-content:flex-end;margin-top:8px}
+.timeline{display:flex;flex-direction:column;gap:12px}
+.timeline-item{background:var(--card);padding:14px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.edu-card{background:var(--card);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.contact-grid{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap}
+.contact-grid form{flex:1;min-width:260px;display:flex;flex-direction:column;gap:10px}
+.contact-grid input,.contact-grid textarea{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text)}
+.site-footer{padding:18px 0;text-align:center;border-top:1px solid rgba(255,255,255,0.02);margin-top:32px}
+
+.accent{color:var(--accent)}
+.roles{display:flex;gap:8px;justify-content:center;margin-top:8px}
+.roles span{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:6px;font-size:13px;color:var(--muted)}
+
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);z-index:60;padding:20px}
+.modal[aria-hidden="false"]{display:flex}
+.modal-inner{background:linear-gradient(180deg, #071028, #071020);padding:18px;border-radius:12px;max-width:760px;width:100%;color:var(--text);position:relative;border:1px solid rgba(255,255,255,0.04)}
+.modal-close{position:absolute;top:10px;right:10px;background:transparent;border:0;color:var(--muted);font-size:20px;cursor:pointer}
+
+@media (max-width:900px){
+  .header-inner{flex-direction:column;gap:8px;align-items:flex-start}
+  .nav{display:flex;flex-wrap:wrap}
+  .hero{flex-direction:column;align-items:stretch}
+  .hero-right{width:100%}
+}
