@@ -16,4 +16,4 @@ You can run this project locally or access it online via GitHub Pages.
 ### Locally
 1. Clone the repository:
    ```bash
-  git clone https://github.com/USERNAME/my-project.git
+  git clone https://github.com/sandeepknl2/my-project.git
