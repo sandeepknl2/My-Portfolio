@@ -17,3 +17,5 @@ You can run this project locally or access it online via GitHub Pages.
 1. Clone the repository:
    ```bash
   git clone https://github.com/sandeepknl2/my-project.git
+
+  <img width="1909" height="876" alt="image" src="https://github.com/user-attachments/assets/c1da57cd-fb6f-4bff-86f9-d2a31eb6a09c" />
